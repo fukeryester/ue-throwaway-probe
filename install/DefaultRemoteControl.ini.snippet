@@ -1,0 +1,11 @@
+; Optional second entry. Remote Execution is the channel this repo uses.
+; URemoteControlSettings reads Config/DefaultRemoteControl.ini, not DefaultEngine.ini.
+; Keep the HTTP server on loopback. Do not set bAllowAnyRemoteFunctionCall.
+
+[/Script/RemoteControlCommon.RemoteControlSettings]
+bAutoStartWebServer=True
+RemoteControlHttpServerPort=30010
+bEnableRemotePythonExecution=True
+bAllowAnyRemoteFunctionCall=False
++CustomAllowedRemoteFunctionCalls=(ClassPath="/Script/PythonScriptPlugin.PythonScriptLibrary")
+bAllowConsoleCommandRemoteExecution=False

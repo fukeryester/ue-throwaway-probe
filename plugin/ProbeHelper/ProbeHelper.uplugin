@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Probe Helper",
+	"Description": "Read-only PIE helpers for throwaway editor Python. Does not patch gameplay modules.",
+	"Category": "Editor",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsEditorOnly": true,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		}
+	]
+}
